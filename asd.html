@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Звіт про пожежі</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #c2f0c2;
+            width: 550px;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+        h2 {
+            text-align: center;
+            color: red;
+            font-family: serif;
+            font-size: 20pt;
+        }
+        table {
+            width: 100%;
+        }
+        .yellow-green {
+            background-color: #adff2f;
+        }
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Заповніть поля форми <br> "Звіт про пожежі в Херсонській області"</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td>Дата виникнення пожежі:</td>
+                <td><input type="text" class="yellow-green"></td>
+            </tr>
+            <tr>
+                <td>Форма власності:</td>
+                <td>
+                    <input type="radio" name="group1"> державна
+                    <input type="radio" name="group1"> приватна
+                </td>
+            </tr>
+            <tr>
+                <td>Район міста:</td>
+                <td>
+                    <select>
+                        <option>Дніпровський</option>
+                        <option>Скадовський</option>
+                        <option>Суворовський</option>
+                        <option>Олешківський</option>
+                        <option>Центральний</option>
+                        <option>Голопристанський</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Кількість врятованих:</td>
+                <td><input type="number" value="0"></td>
+            </tr>
+            <tr>
+                <td>Сума прямого збитку:</td>
+                <td><input type="number" value="0"></td>
+            </tr>
+            <tr>
+                <td>Сума непрямого збитку:</td>
+                <td><input type="number" value="0"></td>
+            </tr>
+            <tr>
+                <td>Інспектор:</td>
+                <td>
+                    <input type="checkbox"> Велічков В.В.<br>
+                    <input type="checkbox"> Хохлов Н.В.<br>
+                    <input type="checkbox"> Петров М.В.<br>
+                    <input type="checkbox"> Колодій А.В.<br>
+                    <input type="checkbox"> Тюрін В.Н.
+                </td>
+            </tr>
+            <tr>
+                <td>Причини виникнення пожежі:</td>
+                <td>
+                    <select>
+                        <option>коротке замикання електропроводки</option>
+                        <option>необережність під час куріння</option>
+                        <option>необережність з вогнем</option>
+                        <option>підпал</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset" value="Очистити форму">
+                    <br><br>
+                    <input type="submit" value="Відправити">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
